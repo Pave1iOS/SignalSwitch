@@ -21,13 +21,12 @@ struct ButtonView: View {
                 )
                 .frame(width: 170, height: 50)
                 .foregroundStyle(.blue)
-                .shadow(color: .gray, radius: 5)
             
             HStack(spacing: 10) {
                 Image(systemName: "sun.horizon.circle")
                     .font(.title)
                     .foregroundStyle(.white)
-                    .shadow(color: .white, radius: 2)
+                    .shadow(color: .white, radius: 3)
                 
                 Text(text)
                     .font(.largeTitle)
