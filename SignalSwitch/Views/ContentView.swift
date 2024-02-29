@@ -27,22 +27,28 @@ struct ContentView: View {
             VStack {
                 SignalView(color: .red)
                     .opacity(redLight.rawValue)
-                    .overlay(Circle()
-                        .stroke(lineWidth: 5)
-                        .fill(.white))
+                    .overlay(
+                        Circle()
+                            .stroke(lineWidth: 5)
+                            .fill(.white))
+                    .shadow(color: .gray, radius: 5)
                 
                 SignalView(color: .yellow)
                     .opacity(yellowLight.rawValue)
-                    .overlay(Circle()
-                        .stroke(lineWidth: 5)
-                        .fill(.white))
+                    .overlay(
+                        Circle()
+                            .stroke(lineWidth: 5)
+                            .fill(.white))
+                    .shadow(color: .gray, radius: 5)
                     .padding([.bottom, .top], 10)
                 
                 SignalView(color: .green)
                     .opacity(greenLight.rawValue)
-                    .overlay(Circle()
-                        .stroke(lineWidth: 5)
-                        .fill(.white))
+                    .overlay(
+                        Circle()
+                            .stroke(lineWidth: 5)
+                            .fill(.white))
+                    .shadow(color: .gray, radius: 5)
                 
                 Spacer()
                 
@@ -51,6 +57,7 @@ struct ContentView: View {
                     }
                     .padding(.bottom, 30)
             }
+            .padding()
         }
     }
 }
