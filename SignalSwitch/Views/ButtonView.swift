@@ -8,21 +8,22 @@
 import SwiftUI
 
 struct ButtonView: View {
-    let btnText: String
+    let text: String
     
     var body: some View {
         ZStack {
             Rectangle()
                 .overlay(
                     RoundedRectangle(cornerRadius: 15.0)
-                            .stroke(lineWidth: 5)
+                            .stroke(lineWidth: 7)
                             .fill(.white)
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
                 .frame(width: 150, height: 50)
                 .foregroundStyle(.blue)
             
-                Text(btnText)
+                Text(text)
+                .font(.largeTitle)
                 .bold()
                 .foregroundStyle(.white)
         }
@@ -30,5 +31,5 @@ struct ButtonView: View {
 }
 
 #Preview {
-    ButtonView(btnText: "NEXT")
+    ButtonView(text: "NEXT")
 }

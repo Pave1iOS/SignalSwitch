@@ -56,9 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				464D9D692B9080E000DC5828 /* SignalSwitchApp.swift */,
-				464D9D6B2B9080E000DC5828 /* ContentView.swift */,
-				464D9D7B2B9095EA00DC5828 /* ButtonView.swift */,
-				464D9D772B90816200DC5828 /* SignalView.swift */,
+				464D9D7D2B90B81200DC5828 /* Views */,
 				464D9D6D2B9080E300DC5828 /* Assets.xcassets */,
 				464D9D6F2B9080E300DC5828 /* Preview Content */,
 			);
@@ -71,6 +69,16 @@
 				464D9D702B9080E300DC5828 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		464D9D7D2B90B81200DC5828 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				464D9D6B2B9080E000DC5828 /* ContentView.swift */,
+				464D9D7B2B9095EA00DC5828 /* ButtonView.swift */,
+				464D9D772B90816200DC5828 /* SignalView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
