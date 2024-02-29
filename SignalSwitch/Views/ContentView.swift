@@ -47,6 +47,7 @@ struct ContentView: View {
                     Button(action: changeSignalColor) {
                         ButtonView(text: buttonText.rawValue)
                     }
+                    .padding(.bottom, 30)
             }
         }
     }
