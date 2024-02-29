@@ -19,18 +19,25 @@ struct ButtonView: View {
                             .stroke(lineWidth: 5)
                             .fill(.white)
                 )
-                .frame(width: 150, height: 50)
+                .frame(width: 170, height: 50)
                 .foregroundStyle(.blue)
                 .shadow(color: .gray, radius: 5)
             
+            HStack {
+                Image(systemName: "sun.horizon.circle")
+                    .font(.title)
+                    .foregroundStyle(.white)
+                    .shadow(color: .white, radius: 2)
+
                 Text(text)
-                .font(.largeTitle)
-                .bold()
-                .foregroundStyle(.white)
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundStyle(.white)
+            }
         }
     }
 }
 
 #Preview {
-    ButtonView(text: "NEXT")
+    ButtonView(text: "START")
 }
