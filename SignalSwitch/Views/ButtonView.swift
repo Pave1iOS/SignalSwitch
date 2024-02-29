@@ -21,7 +21,7 @@ struct ButtonView: View {
                 )
                 .frame(width: 150, height: 50)
                 .foregroundStyle(.blue)
-                .shadow(color: .gray, radius: 3)
+                .shadow(color: .gray, radius: 5)
             
                 Text(text)
                 .font(.largeTitle)
