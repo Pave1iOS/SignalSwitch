@@ -28,7 +28,7 @@ struct ButtonView: View {
                     .font(.title)
                     .foregroundStyle(.white)
                     .shadow(color: .white, radius: 2)
-
+                
                 Text(text)
                     .font(.largeTitle)
                     .bold()
