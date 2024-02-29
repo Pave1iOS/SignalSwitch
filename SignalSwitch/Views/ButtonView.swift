@@ -13,12 +13,12 @@ struct ButtonView: View {
     var body: some View {
         ZStack {
             Rectangle()
+                .clipShape(RoundedRectangle(cornerRadius: 15.0))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15.0)
                             .stroke(lineWidth: 7)
                             .fill(.white)
                 )
-                .clipShape(RoundedRectangle(cornerRadius: 15.0))
                 .frame(width: 150, height: 50)
                 .foregroundStyle(.blue)
             
