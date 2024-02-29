@@ -23,7 +23,7 @@ struct ButtonView: View {
                 .foregroundStyle(.blue)
                 .shadow(color: .gray, radius: 5)
             
-            HStack {
+            HStack(spacing: 10) {
                 Image(systemName: "sun.horizon.circle")
                     .font(.title)
                     .foregroundStyle(.white)
