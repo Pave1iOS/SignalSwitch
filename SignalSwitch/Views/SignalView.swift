@@ -14,8 +14,6 @@ struct SignalView: View {
         Circle()
             .foregroundStyle(color)
             .frame(width: 150, height: 150)
-//            .overlay(Circle().stroke(.white, lineWidth: 3))
-//            .shadow(color: .gray, radius: 5)
     }
 }
 
