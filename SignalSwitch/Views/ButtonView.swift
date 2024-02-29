@@ -16,7 +16,7 @@ struct ButtonView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
                 .overlay(
                     RoundedRectangle(cornerRadius: 15.0)
-                            .stroke(lineWidth: 7)
+                            .stroke(lineWidth: 5)
                             .fill(.white)
                 )
                 .frame(width: 150, height: 50)

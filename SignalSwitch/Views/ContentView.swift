@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // MARK: @State properties
     @State private var redLight = SignalLight.isOFF
     @State private var yellowLight = SignalLight.isOFF
     @State private var greenLight = SignalLight.isOFF
@@ -17,6 +18,7 @@ struct ContentView: View {
 
     @State private var buttonText = ButtonText.start
         
+    // MARK: Body
     var body: some View {
         ZStack {
             Color(.black)
