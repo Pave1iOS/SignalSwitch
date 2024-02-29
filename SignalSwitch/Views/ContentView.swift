@@ -63,8 +63,8 @@ struct ContentView: View {
 }
 
 // MARK: Functions
-extension ContentView {
-    private func changeSignalColor() {
+private extension ContentView {
+    func changeSignalColor() {
         changeButtonText()
         
         switch currentLight {
@@ -86,7 +86,7 @@ extension ContentView {
         }
     }
     
-    private func changeButtonText() {
+    func changeButtonText() {
         if buttonText == .start {
             buttonText = .next
         }
@@ -94,7 +94,7 @@ extension ContentView {
 }
 
 // MARK: Enums
-extension ContentView {
+private extension ContentView {
     
     enum ButtonText: String {
         case start = "START"
